@@ -1,4 +1,4 @@
-# PolishValidators
+# PolishValidators [![Build Status](https://travis-ci.org/dbackowski/polish_cell_number_checker.svg)](https://travis-ci.org/dbackowski/polish_cell_number_checker)
 
 Library for validate polish numbers: PESEL, NIP, REGON
 
