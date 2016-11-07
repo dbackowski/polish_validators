@@ -3,7 +3,7 @@ require 'spec_helper'
 describe PolishValidators::RegonValidator do
   describe '.valid?' do
     context 'with valid number' do
-      it "return true" do
+      it 'return true' do
         regon = PolishValidators::RegonValidator.new(123456785)
         expect(regon).to be_valid
 
@@ -13,7 +13,7 @@ describe PolishValidators::RegonValidator do
     end
 
     context 'with invalid number' do
-      it "return false" do
+      it 'return false' do
         regon = PolishValidators::RegonValidator.new(123456786)
         expect(regon).to_not be_valid
 

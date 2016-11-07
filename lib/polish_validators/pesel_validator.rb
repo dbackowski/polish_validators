@@ -5,7 +5,7 @@ module PolishValidators
     end
 
     def valid?
-      return unless @pesel.match(/\A\d{11}\Z/)
+      return unless @pesel =~ /\A\d{11}\Z/
 
       weights = [1, 3, 7, 9, 1, 3, 7, 9, 1, 3]
       pesel = @pesel.split(//).collect(&:to_i)

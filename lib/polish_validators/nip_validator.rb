@@ -5,7 +5,7 @@ module PolishValidators
     end
 
     def valid?
-      return unless @nip.match(/\A\d{10}\Z/)
+      return unless @nip =~ /\A\d{10}\Z/
 
       weights = [6, 5, 7, 2, 3, 4, 5, 6, 7]
       nip = @nip.split(//).collect(&:to_i)

@@ -5,7 +5,7 @@ module PolishValidators
     end
 
     def valid?
-      return unless @regon.match(/\A\d{9,14}\Z/)
+      return unless @regon =~ /\A\d{9,14}\Z/
 
       weights8 = [8, 9, 2, 3, 4, 5, 6, 7]
       weights14 = [2, 4, 8, 5, 0, 9, 7, 3, 6, 1, 2, 4, 8]

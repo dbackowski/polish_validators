@@ -1,6 +1,6 @@
 # PolishValidators [![Build Status](https://travis-ci.org/dbackowski/polish_validators.svg?branch=master)](https://travis-ci.org/dbackowski/polish_validators)
 
-Library for validate polish numbers: PESEL, NIP, REGON
+Library for validate polish numbers: PESEL, NIP, REGON, IBAN (PL)
 
 ## Installation
 
@@ -19,6 +19,14 @@ Or install it yourself as:
     $ gem install polish_validators
 
 ## Usage
+
+IBAN Validation:
+
+```ruby
+iban = PolishValidators::IbanValidator.new('PL61109010140000071219812874')
+iban.valid?
+=> true
+```
 
 NIP Validation:
 
